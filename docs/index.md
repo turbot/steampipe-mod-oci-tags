@@ -91,6 +91,51 @@ Several benchmarks have [input variables](https://steampipe.io/docs/using-steamp
 
 These are only some of the ways you can set variables. For a full list, please see [Passing Input Variables](https://steampipe.io/docs/using-steampipe/mod-variables#passing-input-variables).
 
+## Advanced usage
+
+### Remediation
+
+Using the control output and the OCI CLI, you can remediate various tagging issues.
+
+For instance, with the results of the `core_instance_mandatory` control, you can add missing tags with the OCI CLI:
+
+```bash
+#!/bin/bash
+
+#!/bin/bash
+
+OLDIFS=$IFS
+IFS='#'
+
+INPUT=$(steampipe check control.core_instance_mandatory --var 'mandatory_tags=["Application"]' --output csv --header=false --separator '#' | grep 'alarm')
+[ -z "$INPUT" ] && { echo "No virtual machines in alarm, aborting"; exit 0; }
+
+while read -r group_id title description control_id control_title control_description reason resource status compartment_id
+do
+  oci compute instance update --instance-id ${resource} --freeform-tags '{"Application":"MyApplication"}' --force
+done <<< "$INPUT"
+
+IFS=$OLDIFS
+```
+
+To remove prohibited tags from Compute instance:
+```bash
+#!/bin/bash
+
+OLDIFS=$IFS
+IFS='#'
+
+INPUT=$(steampipe check control.core_instance_mandatory --var 'prohibited_tags=["Password"]' --output csv --header=false --separator '#' | grep 'alarm')
+[ -z "$INPUT" ] && { echo "No virtual machines in alarm, aborting"; exit 0; }
+
+while read -r group_id title description control_id control_title control_description reason resource status compartment_id
+do
+  oci compute instance update --instance-id ${resource} --freeform-tags '{}' --force
+done <<< "$INPUT"
+
+IFS=$OLDIFS
+```
+
 ## Get involved
 
 * Contribute: [GitHub Repo](https://github.com/turbot/steampipe-mod-oci-tags)
