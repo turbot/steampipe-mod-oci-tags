@@ -26,9 +26,7 @@ locals {
     from
       analysis
   EOT
-}
 
-locals {
   compartment_resource_limit_sql = <<EOT
     with analysis as (
       select

@@ -30,9 +30,7 @@ locals {
     from
       analysis
   EOT
-}
 
-locals {
   compartment_resource_mandatory_sql = <<EOT
     with analysis as (
       select

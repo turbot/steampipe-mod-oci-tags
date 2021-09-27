@@ -35,9 +35,7 @@ locals {
     left join analysis as a on a.title = r.title
     left join oci_identity_tenancy as t on r.tenant_id = t.id
   EOT
-}
 
-locals {
   compartment_resource_prohibited_sql = <<EOT
     with analysis as (
       select

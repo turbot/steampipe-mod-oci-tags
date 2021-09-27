@@ -15,9 +15,7 @@ locals {
       __TABLE_NAME__ as a,
       oci_identity_tenancy as t;
   EOT
-}
 
-locals {
   compartment_resource_untagged_sql = <<EOT
     select
       a.title as resource,
@@ -35,7 +33,6 @@ locals {
       left join oci_identity_compartment c on c.id = a.compartment_id
   EOT
 }
-
 
 benchmark "untagged" {
   title       = "Untagged"
