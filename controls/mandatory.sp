@@ -134,8 +134,8 @@ benchmark "mandatory" {
 
 
 control "analytics_instance_mandatory" {
-  title       = "Analytics instances should have mandatory tags"
-  description = "Check if Analytics instances have mandatory tags."
+  title       = "Analytics Cloud instances should have mandatory tags"
+  description = "Check if Analytics Cloud instances have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_analytics_instance")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -143,8 +143,8 @@ control "analytics_instance_mandatory" {
 }
 
 control "apigateway_api_mandatory" {
-  title       = "Apigateway apis should have mandatory tags"
-  description = "Check if Apigateway apis have mandatory tags."
+  title       = "API Gateway APIs should have mandatory tags"
+  description = "Check if API Gateway APIs have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_apigateway_api")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -161,8 +161,8 @@ control "autoscaling_auto_scaling_configuration_mandatory" {
 }
 
 control "budget_alert_rule_mandatory" {
-  title       = "Budget alert rules should have mandatory tags"
-  description = "Check if Budget alert rules have mandatory tags."
+  title       = "Budgets alert rules should have mandatory tags"
+  description = "Check if Budgets alert rules have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_budget_alert_rule")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -170,8 +170,8 @@ control "budget_alert_rule_mandatory" {
 }
 
 control "budget_budget_mandatory" {
-  title       = "Budget budgets should have mandatory tags"
-  description = "Check if Budget budgets have mandatory tags."
+  title       = "Budgets should have mandatory tags"
+  description = "Check if Budgets have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_budget_budget")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -179,8 +179,8 @@ control "budget_budget_mandatory" {
 }
 
 control "cloud_guard_detector_recipe_mandatory" {
-  title       = "Cloud guard detector recipes should have mandatory tags"
-  description = "Check if Cloud guard detector recipes have mandatory tags."
+  title       = "Cloud Guard detector recipes should have mandatory tags"
+  description = "Check if Cloud Guard detector recipes have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_cloud_guard_detector_recipe")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -188,8 +188,8 @@ control "cloud_guard_detector_recipe_mandatory" {
 }
 
 control "cloud_guard_managed_list_mandatory" {
-  title       = "Cloud guard managed lists should have mandatory tags"
-  description = "Check if Cloud guard managed lists have mandatory tags."
+  title       = "Cloud Guard managed lists should have mandatory tags"
+  description = "Check if Cloud Guard managed lists have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_cloud_guard_managed_list")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -197,8 +197,8 @@ control "cloud_guard_managed_list_mandatory" {
 }
 
 control "cloud_guard_responder_recipe_mandatory" {
-  title       = "Cloud guard responder recipes should have mandatory tags"
-  description = "Check if Cloud guard responder recipes have mandatory tags."
+  title       = "Cloud Guard responder recipes should have mandatory tags"
+  description = "Check if Cloud Guard responder recipes have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_cloud_guard_responder_recipe")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -206,8 +206,8 @@ control "cloud_guard_responder_recipe_mandatory" {
 }
 
 control "cloud_guard_target_mandatory" {
-  title       = "Cloud guard targets should have mandatory tags"
-  description = "Check if Cloud guard targets have mandatory tags."
+  title       = "Cloud Guard targets should have mandatory tags"
+  description = "Check if Cloud Guard targets have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_cloud_guard_target")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -251,8 +251,8 @@ control "core_boot_volume_replica_mandatory" {
 }
 
 control "core_dhcp_options_mandatory" {
-  title       = "Core dhcp options should have mandatory tags"
-  description = "Check if Core dhcp options have mandatory tags."
+  title       = "Core DHCP options should have mandatory tags"
+  description = "Check if Core DHCP options have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_core_dhcp_options")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -260,8 +260,8 @@ control "core_dhcp_options_mandatory" {
 }
 
 control "core_drg_mandatory" {
-  title       = "Core drgs should have mandatory tags"
-  description = "Check if Core drgs have mandatory tags."
+  title       = "Core DRGs should have mandatory tags"
+  description = "Check if Core DRGs have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_core_drg")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -350,8 +350,8 @@ control "core_network_security_group_mandatory" {
 }
 
 control "core_public_ip_mandatory" {
-  title       = "Core public ips should have mandatory tags"
-  description = "Check if Core public ips have mandatory tags."
+  title       = "Core public IPs should have mandatory tags"
+  description = "Check if Core public IPs have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_core_public_ip")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -359,8 +359,8 @@ control "core_public_ip_mandatory" {
 }
 
 control "core_public_ip_pool_mandatory" {
-  title       = "Core public ip pools should have mandatory tags"
-  description = "Check if Core public ip pools have mandatory tags."
+  title       = "Core public IP pools should have mandatory tags"
+  description = "Check if Core public IP pools have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_core_public_ip_pool")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -404,8 +404,8 @@ control "core_subnet_mandatory" {
 }
 
 control "core_vcn_mandatory" {
-  title       = "Core vcns should have mandatory tags"
-  description = "Check if Core vcns have mandatory tags."
+  title       = "Core VCNs should have mandatory tags"
+  description = "Check if Core VCNs have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_core_vcn")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -449,8 +449,8 @@ control "database_autonomous_database_mandatory" {
 }
 
 control "database_db_mandatory" {
-  title       = "Database dbs should have mandatory tags"
-  description = "Check if Database dbs have mandatory tags."
+  title       = "Database DBs should have mandatory tags"
+  description = "Check if Database DBs have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_database_db")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -458,8 +458,8 @@ control "database_db_mandatory" {
 }
 
 control "database_db_home_mandatory" {
-  title       = "Database db homes should have mandatory tags"
-  description = "Check if Database db homes have mandatory tags."
+  title       = "Database DB homes should have mandatory tags"
+  description = "Check if Database DB homes have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_database_db_home")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -467,8 +467,8 @@ control "database_db_home_mandatory" {
 }
 
 control "database_db_system_mandatory" {
-  title       = "Database db systems should have mandatory tags"
-  description = "Check if Database db systems have mandatory tags."
+  title       = "Database DB systems should have mandatory tags"
+  description = "Check if Database DB systems have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_database_db_system")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -485,8 +485,8 @@ control "database_software_image_mandatory" {
 }
 
 control "dns_tsig_key_mandatory" {
-  title       = "Dns tsig keys should have mandatory tags"
-  description = "Check if Dns tsig keys have mandatory tags."
+  title       = "DNS TSIG keys should have mandatory tags"
+  description = "Check if DNS TSIG keys have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_dns_tsig_key")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -494,8 +494,8 @@ control "dns_tsig_key_mandatory" {
 }
 
 control "dns_zone_mandatory" {
-  title       = "Dns zones should have mandatory tags"
-  description = "Check if Dns zones have mandatory tags."
+  title       = "DNS zones should have mandatory tags"
+  description = "Check if DNS zones have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_dns_zone")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -512,8 +512,8 @@ control "events_rule_mandatory" {
 }
 
 control "file_storage_file_system_mandatory" {
-  title       = "File storage file systems should have mandatory tags"
-  description = "Check if File storage file systems have mandatory tags."
+  title       = "File Storage file systems should have mandatory tags"
+  description = "Check if File Storage file systems have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_file_storage_file_system")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -521,8 +521,8 @@ control "file_storage_file_system_mandatory" {
 }
 
 control "file_storage_mount_target_mandatory" {
-  title       = "File storage mount targets should have mandatory tags"
-  description = "Check if File storage mount targets have mandatory tags."
+  title       = "File Storage mount targets should have mandatory tags"
+  description = "Check if File Storage mount targets have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_file_storage_mount_target")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -530,8 +530,8 @@ control "file_storage_mount_target_mandatory" {
 }
 
 control "file_storage_snapshot_mandatory" {
-  title       = "File storage snapshots should have mandatory tags"
-  description = "Check if File storage snapshots have mandatory tags."
+  title       = "File Storage snapshots should have mandatory tags"
+  description = "Check if File Storage snapshots have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_file_storage_snapshot")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -656,8 +656,8 @@ control "logging_log_group_mandatory" {
 }
 
 control "mysql_backup_mandatory" {
-  title       = "Mysql backups should have mandatory tags"
-  description = "Check if Mysql backups have mandatory tags."
+  title       = "MySQL backups should have mandatory tags"
+  description = "Check if MySQL backups have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_mysql_backup")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -665,8 +665,8 @@ control "mysql_backup_mandatory" {
 }
 
 control "mysql_channel_mandatory" {
-  title       = "Mysql channels should have mandatory tags"
-  description = "Check if Mysql channels have mandatory tags."
+  title       = "MySQL channels should have mandatory tags"
+  description = "Check if MySQL channels have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_mysql_channel")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -674,8 +674,8 @@ control "mysql_channel_mandatory" {
 }
 
 control "mysql_configuration_mandatory" {
-  title       = "Mysql configurations should have mandatory tags"
-  description = "Check if Mysql configurations have mandatory tags."
+  title       = "MySQL configurations should have mandatory tags"
+  description = "Check if MySQL configurations have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_mysql_configuration")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -683,8 +683,8 @@ control "mysql_configuration_mandatory" {
 }
 
 control "mysql_configuration_custom_mandatory" {
-  title       = "Mysql configuration customs should have mandatory tags"
-  description = "Check if Mysql configuration customs have mandatory tags."
+  title       = "MySQL configuration customs should have mandatory tags"
+  description = "Check if MySQL configuration customs have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_mysql_configuration_custom")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -692,8 +692,8 @@ control "mysql_configuration_custom_mandatory" {
 }
 
 control "mysql_db_system_mandatory" {
-  title       = "Mysql db systems should have mandatory tags"
-  description = "Check if Mysql db systems have mandatory tags."
+  title       = "MySQL DB systems should have mandatory tags"
+  description = "Check if MySQL DB systems have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_mysql_db_system")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -701,8 +701,8 @@ control "mysql_db_system_mandatory" {
 }
 
 control "nosql_table_mandatory" {
-  title       = "Nosql tables should have mandatory tags"
-  description = "Check if Nosql tables have mandatory tags."
+  title       = "NoSQL tables should have mandatory tags"
+  description = "Check if NoSQL tables have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_nosql_table")
   param "mandatory_tags" {
     default = var.mandatory_tags
@@ -719,8 +719,8 @@ control "objectstorage_bucket_mandatory" {
 }
 
 control "ons_subscription_mandatory" {
-  title       = "Ons subscriptions should have mandatory tags"
-  description = "Check if Ons subscriptions have mandatory tags."
+  title       = "ONS subscriptions should have mandatory tags"
+  description = "Check if ONS subscriptions have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_ons_subscription")
   param "mandatory_tags" {
     default = var.mandatory_tags

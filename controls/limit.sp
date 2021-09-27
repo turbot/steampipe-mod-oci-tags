@@ -126,8 +126,8 @@ benchmark "limit" {
 
 
 control "analytics_instance_tag_limit" {
-  title       = "Analytics instances should not exceed tag limit"
-  description = "Check if the number of tags on Analytics instances do not exceed the limit."
+  title       = "Analytics Cloud instances should not exceed tag limit"
+  description = "Check if the number of tags on Analytics Cloud instances do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_analytics_instance")
   param "tag_limit" {
     default = var.tag_limit
@@ -135,8 +135,8 @@ control "analytics_instance_tag_limit" {
 }
 
 control "apigateway_api_tag_limit" {
-  title       = "Apigateway apis should not exceed tag limit"
-  description = "Check if the number of tags on Apigateway apis do not exceed the limit."
+  title       = "API Gateway APIs should not exceed tag limit"
+  description = "Check if the number of tags on API Gateway APIs do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_apigateway_api")
   param "tag_limit" {
     default = var.tag_limit
@@ -153,8 +153,8 @@ control "autoscaling_auto_scaling_configuration_tag_limit" {
 }
 
 control "budget_alert_rule_tag_limit" {
-  title       = "Budget alert rules should not exceed tag limit"
-  description = "Check if the number of tags on Budget alert rules do not exceed the limit."
+  title       = "Budgets alert rules should not exceed tag limit"
+  description = "Check if the number of tags on Budgets alert rules do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_budget_alert_rule")
   param "tag_limit" {
     default = var.tag_limit
@@ -162,8 +162,8 @@ control "budget_alert_rule_tag_limit" {
 }
 
 control "budget_budget_tag_limit" {
-  title       = "Budget budgets should not exceed tag limit"
-  description = "Check if the number of tags on Budget budgets do not exceed the limit."
+  title       = "Budgets should not exceed tag limit"
+  description = "Check if the number of tags on Budgets do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_budget_budget")
   param "tag_limit" {
     default = var.tag_limit
@@ -171,8 +171,8 @@ control "budget_budget_tag_limit" {
 }
 
 control "cloud_guard_detector_recipe_tag_limit" {
-  title       = "Cloud guard detector recipes should not exceed tag limit"
-  description = "Check if the number of tags on Cloud guard detector recipes do not exceed the limit."
+  title       = "Cloud Guard detector recipes should not exceed tag limit"
+  description = "Check if the number of tags on Cloud Guard detector recipes do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_cloud_guard_detector_recipe")
   param "tag_limit" {
     default = var.tag_limit
@@ -180,8 +180,8 @@ control "cloud_guard_detector_recipe_tag_limit" {
 }
 
 control "cloud_guard_managed_list_tag_limit" {
-  title       = "Cloud guard managed lists should not exceed tag limit"
-  description = "Check if the number of tags on Cloud guard managed lists do not exceed the limit."
+  title       = "Cloud Guard managed lists should not exceed tag limit"
+  description = "Check if the number of tags on Cloud Guard managed lists do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_cloud_guard_managed_list")
   param "tag_limit" {
     default = var.tag_limit
@@ -189,8 +189,8 @@ control "cloud_guard_managed_list_tag_limit" {
 }
 
 control "cloud_guard_responder_recipe_tag_limit" {
-  title       = "Cloud guard responder recipes should not exceed tag limit"
-  description = "Check if the number of tags on Cloud guard responder recipes do not exceed the limit."
+  title       = "Cloud Guard responder recipes should not exceed tag limit"
+  description = "Check if the number of tags on Cloud Guard responder recipes do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_cloud_guard_responder_recipe")
   param "tag_limit" {
     default = var.tag_limit
@@ -198,8 +198,8 @@ control "cloud_guard_responder_recipe_tag_limit" {
 }
 
 control "cloud_guard_target_tag_limit" {
-  title       = "Cloud guard targets should not exceed tag limit"
-  description = "Check if the number of tags on Cloud guard targets do not exceed the limit."
+  title       = "Cloud Guard targets should not exceed tag limit"
+  description = "Check if the number of tags on Cloud Guard targets do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_cloud_guard_target")
   param "tag_limit" {
     default = var.tag_limit
@@ -243,8 +243,8 @@ control "core_boot_volume_replica_tag_limit" {
 }
 
 control "core_dhcp_options_tag_limit" {
-  title       = "Core dhcp options should not exceed tag limit"
-  description = "Check if the number of tags on Core dhcp options do not exceed the limit."
+  title       = "Core DHCP options should not exceed tag limit"
+  description = "Check if the number of tags on Core DHCP options do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_core_dhcp_options")
   param "tag_limit" {
     default = var.tag_limit
@@ -252,8 +252,8 @@ control "core_dhcp_options_tag_limit" {
 }
 
 control "core_drg_tag_limit" {
-  title       = "Core drgs should not exceed tag limit"
-  description = "Check if the number of tags on Core drgs do not exceed the limit."
+  title       = "Core DRGs should not exceed tag limit"
+  description = "Check if the number of tags on Core DRGs do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_core_drg")
   param "tag_limit" {
     default = var.tag_limit
@@ -342,8 +342,8 @@ control "core_network_security_group_tag_limit" {
 }
 
 control "core_public_ip_tag_limit" {
-  title       = "Core public ips should not exceed tag limit"
-  description = "Check if the number of tags on Core public ips do not exceed the limit."
+  title       = "Core public IPs should not exceed tag limit"
+  description = "Check if the number of tags on Core public IPs do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_core_public_ip")
   param "tag_limit" {
     default = var.tag_limit
@@ -351,8 +351,8 @@ control "core_public_ip_tag_limit" {
 }
 
 control "core_public_ip_pool_tag_limit" {
-  title       = "Core public ip pools should not exceed tag limit"
-  description = "Check if the number of tags on Core public ip pools do not exceed the limit."
+  title       = "Core public IP pools should not exceed tag limit"
+  description = "Check if the number of tags on Core public IP pools do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_core_public_ip_pool")
   param "tag_limit" {
     default = var.tag_limit
@@ -396,8 +396,8 @@ control "core_subnet_tag_limit" {
 }
 
 control "core_vcn_tag_limit" {
-  title       = "Core vcns should not exceed tag limit"
-  description = "Check if the number of tags on Core vcns do not exceed the limit."
+  title       = "Core VCNs should not exceed tag limit"
+  description = "Check if the number of tags on Core VCNs do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_core_vcn")
   param "tag_limit" {
     default = var.tag_limit
@@ -441,8 +441,8 @@ control "database_autonomous_database_tag_limit" {
 }
 
 control "database_db_tag_limit" {
-  title       = "Database dbs should not exceed tag limit"
-  description = "Check if the number of tags on Database dbs do not exceed the limit."
+  title       = "Database DBs should not exceed tag limit"
+  description = "Check if the number of tags on Database DBs do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_database_db")
   param "tag_limit" {
     default = var.tag_limit
@@ -450,8 +450,8 @@ control "database_db_tag_limit" {
 }
 
 control "database_db_home_tag_limit" {
-  title       = "Database db homes should not exceed tag limit"
-  description = "Check if the number of tags on Database db homes do not exceed the limit."
+  title       = "Database DB homes should not exceed tag limit"
+  description = "Check if the number of tags on Database DB homes do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_database_db_home")
   param "tag_limit" {
     default = var.tag_limit
@@ -459,8 +459,8 @@ control "database_db_home_tag_limit" {
 }
 
 control "database_db_system_tag_limit" {
-  title       = "Database db systems should not exceed tag limit"
-  description = "Check if the number of tags on Database db systems do not exceed the limit."
+  title       = "Database DB systems should not exceed tag limit"
+  description = "Check if the number of tags on Database DB systems do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_database_db_system")
   param "tag_limit" {
     default = var.tag_limit
@@ -477,8 +477,8 @@ control "database_software_image_tag_limit" {
 }
 
 control "dns_tsig_key_tag_limit" {
-  title       = "Dns tsig keys should not exceed tag limit"
-  description = "Check if the number of tags on Dns tsig keys do not exceed the limit."
+  title       = "DNS TSIG keys should not exceed tag limit"
+  description = "Check if the number of tags on DNS TSIG keys do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_dns_tsig_key")
   param "tag_limit" {
     default = var.tag_limit
@@ -486,8 +486,8 @@ control "dns_tsig_key_tag_limit" {
 }
 
 control "dns_zone_tag_limit" {
-  title       = "Dns zones should not exceed tag limit"
-  description = "Check if the number of tags on Dns zones do not exceed the limit."
+  title       = "DNS zones should not exceed tag limit"
+  description = "Check if the number of tags on DNS zones do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_dns_zone")
   param "tag_limit" {
     default = var.tag_limit
@@ -504,8 +504,8 @@ control "events_rule_tag_limit" {
 }
 
 control "file_storage_file_system_tag_limit" {
-  title       = "File storage file systems should not exceed tag limit"
-  description = "Check if the number of tags on File storage file systems do not exceed the limit."
+  title       = "File Storage file systems should not exceed tag limit"
+  description = "Check if the number of tags on File Storage file systems do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_file_storage_file_system")
   param "tag_limit" {
     default = var.tag_limit
@@ -513,8 +513,8 @@ control "file_storage_file_system_tag_limit" {
 }
 
 control "file_storage_mount_target_tag_limit" {
-  title       = "File storage mount targets should not exceed tag limit"
-  description = "Check if the number of tags on File storage mount targets do not exceed the limit."
+  title       = "File Storage mount targets should not exceed tag limit"
+  description = "Check if the number of tags on File Storage mount targets do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_file_storage_mount_target")
   param "tag_limit" {
     default = var.tag_limit
@@ -522,8 +522,8 @@ control "file_storage_mount_target_tag_limit" {
 }
 
 control "file_storage_snapshot_tag_limit" {
-  title       = "File storage snapshots should not exceed tag limit"
-  description = "Check if the number of tags on File storage snapshots do not exceed the limit."
+  title       = "File Storage snapshots should not exceed tag limit"
+  description = "Check if the number of tags on File Storage snapshots do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_file_storage_snapshot")
   param "tag_limit" {
     default = var.tag_limit
@@ -648,8 +648,8 @@ control "logging_log_group_tag_limit" {
 }
 
 control "mysql_backup_tag_limit" {
-  title       = "Mysql backups should not exceed tag limit"
-  description = "Check if the number of tags on Mysql backups do not exceed the limit."
+  title       = "MySQL backups should not exceed tag limit"
+  description = "Check if the number of tags on MySQL backups do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_mysql_backup")
   param "tag_limit" {
     default = var.tag_limit
@@ -657,8 +657,8 @@ control "mysql_backup_tag_limit" {
 }
 
 control "mysql_channel_tag_limit" {
-  title       = "Mysql channels should not exceed tag limit"
-  description = "Check if the number of tags on Mysql channels do not exceed the limit."
+  title       = "MySQL channels should not exceed tag limit"
+  description = "Check if the number of tags on MySQL channels do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_mysql_channel")
   param "tag_limit" {
     default = var.tag_limit
@@ -666,8 +666,8 @@ control "mysql_channel_tag_limit" {
 }
 
 control "mysql_configuration_tag_limit" {
-  title       = "Mysql configurations should not exceed tag limit"
-  description = "Check if the number of tags on Mysql configurations do not exceed the limit."
+  title       = "MySQL configurations should not exceed tag limit"
+  description = "Check if the number of tags on MySQL configurations do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_mysql_configuration")
   param "tag_limit" {
     default = var.tag_limit
@@ -675,8 +675,8 @@ control "mysql_configuration_tag_limit" {
 }
 
 control "mysql_configuration_custom_tag_limit" {
-  title       = "Mysql configuration customs should not exceed tag limit"
-  description = "Check if the number of tags on Mysql configuration customs do not exceed the limit."
+  title       = "MySQL configuration customs should not exceed tag limit"
+  description = "Check if the number of tags on MySQL configuration customs do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_mysql_configuration_custom")
   param "tag_limit" {
     default = var.tag_limit
@@ -684,8 +684,8 @@ control "mysql_configuration_custom_tag_limit" {
 }
 
 control "mysql_db_system_tag_limit" {
-  title       = "Mysql db systems should not exceed tag limit"
-  description = "Check if the number of tags on Mysql db systems do not exceed the limit."
+  title       = "MySQL DB systems should not exceed tag limit"
+  description = "Check if the number of tags on MySQL DB systems do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_mysql_db_system")
   param "tag_limit" {
     default = var.tag_limit
@@ -693,8 +693,8 @@ control "mysql_db_system_tag_limit" {
 }
 
 control "nosql_table_tag_limit" {
-  title       = "Nosql tables should not exceed tag limit"
-  description = "Check if the number of tags on Nosql tables do not exceed the limit."
+  title       = "NoSQL tables should not exceed tag limit"
+  description = "Check if the number of tags on NoSQL tables do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_nosql_table")
   param "tag_limit" {
     default = var.tag_limit
@@ -711,8 +711,8 @@ control "objectstorage_bucket_tag_limit" {
 }
 
 control "ons_subscription_tag_limit" {
-  title       = "Ons subscriptions should not exceed tag limit"
-  description = "Check if the number of tags on Ons subscriptions do not exceed the limit."
+  title       = "ONS subscriptions should not exceed tag limit"
+  description = "Check if the number of tags on ONS subscriptions do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_ons_subscription")
   param "tag_limit" {
     default = var.tag_limit

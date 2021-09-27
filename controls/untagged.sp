@@ -109,14 +109,14 @@ benchmark "untagged" {
 }
 
 control "analytics_instance_untagged" {
-  title       = "Analytics instances should be tagged"
-  description = "Check if Analytics instances have at least 1 tag."
+  title       = "Analytics Cloud instances should be tagged"
+  description = "Check if Analytics Cloud instances have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_analytics_instance")
 }
 
 control "apigateway_api_untagged" {
-  title       = "Apigateway apis should be tagged"
-  description = "Check if Apigateway apis have at least 1 tag."
+  title       = "API Gateway APIs should be tagged"
+  description = "Check if API Gateway APIs have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_apigateway_api")
 }
 
@@ -127,38 +127,38 @@ control "autoscaling_auto_scaling_configuration_untagged" {
 }
 
 control "budget_alert_rule_untagged" {
-  title       = "Budget alert rules should be tagged"
-  description = "Check if Budget alert rules have at least 1 tag."
+  title       = "Budgets alert rules should be tagged"
+  description = "Check if Budgets alert rules have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_budget_alert_rule")
 }
 
 control "budget_budget_untagged" {
-  title       = "Budget budgets should be tagged"
-  description = "Check if Budget budgets have at least 1 tag."
+  title       = "Budgets should be tagged"
+  description = "Check if Budgets have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_budget_budget")
 }
 
 control "cloud_guard_detector_recipe_untagged" {
-  title       = "Cloud guard detector recipes should be tagged"
-  description = "Check if Cloud guard detector recipes have at least 1 tag."
+  title       = "Cloud Guard detector recipes should be tagged"
+  description = "Check if Cloud Guard detector recipes have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_cloud_guard_detector_recipe")
 }
 
 control "cloud_guard_managed_list_untagged" {
-  title       = "Cloud guard managed lists should be tagged"
-  description = "Check if Cloud guard managed lists have at least 1 tag."
+  title       = "Cloud Guard managed lists should be tagged"
+  description = "Check if Cloud Guard managed lists have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_cloud_guard_managed_list")
 }
 
 control "cloud_guard_responder_recipe_untagged" {
-  title       = "Cloud guard responder recipes should be tagged"
-  description = "Check if Cloud guard responder recipes have at least 1 tag."
+  title       = "Cloud Guard responder recipes should be tagged"
+  description = "Check if Cloud Guard responder recipes have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_cloud_guard_responder_recipe")
 }
 
 control "cloud_guard_target_untagged" {
-  title       = "Cloud guard targets should be tagged"
-  description = "Check if Cloud guard targets have at least 1 tag."
+  title       = "Cloud Guard targets should be tagged"
+  description = "Check if Cloud Guard targets have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_cloud_guard_target")
 }
 
@@ -187,14 +187,14 @@ control "core_boot_volume_replica_untagged" {
 }
 
 control "core_dhcp_options_untagged" {
-  title       = "Core dhcp options should be tagged"
-  description = "Check if Core dhcp options have at least 1 tag."
+  title       = "Core DHCP options should be tagged"
+  description = "Check if Core DHCP options have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_core_dhcp_options")
 }
 
 control "core_drg_untagged" {
-  title       = "Core drgs should be tagged"
-  description = "Check if Core drgs have at least 1 tag."
+  title       = "Core DRGs should be tagged"
+  description = "Check if Core DRGs have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_core_drg")
 }
 
@@ -253,14 +253,14 @@ control "core_network_security_group_untagged" {
 }
 
 control "core_public_ip_untagged" {
-  title       = "Core public ips should be tagged"
-  description = "Check if Core public ips have at least 1 tag."
+  title       = "Core public IPs should be tagged"
+  description = "Check if Core public IPs have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_core_public_ip")
 }
 
 control "core_public_ip_pool_untagged" {
-  title       = "Core public ip pools should be tagged"
-  description = "Check if Core public ip pools have at least 1 tag."
+  title       = "Core public IP pools should be tagged"
+  description = "Check if Core public IP pools have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_core_public_ip_pool")
 }
 
@@ -289,8 +289,8 @@ control "core_subnet_untagged" {
 }
 
 control "core_vcn_untagged" {
-  title       = "Core vcns should be tagged"
-  description = "Check if Core vcns have at least 1 tag."
+  title       = "Core VCNs should be tagged"
+  description = "Check if Core VCNs have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_core_vcn")
 }
 
@@ -319,20 +319,20 @@ control "database_autonomous_database_untagged" {
 }
 
 control "database_db_untagged" {
-  title       = "Database dbs should be tagged"
-  description = "Check if Database dbs have at least 1 tag."
+  title       = "Database DBs should be tagged"
+  description = "Check if Database DBs have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_database_db")
 }
 
 control "database_db_home_untagged" {
-  title       = "Database db homes should be tagged"
-  description = "Check if Database db homes have at least 1 tag."
+  title       = "Database DB homes should be tagged"
+  description = "Check if Database DB homes have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_database_db_home")
 }
 
 control "database_db_system_untagged" {
-  title       = "Database db systems should be tagged"
-  description = "Check if Database db systems have at least 1 tag."
+  title       = "Database DB systems should be tagged"
+  description = "Check if Database DB systems have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_database_db_system")
 }
 
@@ -343,14 +343,14 @@ control "database_software_image_untagged" {
 }
 
 control "dns_tsig_key_untagged" {
-  title       = "Dns tsig keys should be tagged"
-  description = "Check if Dns tsig keys have at least 1 tag."
+  title       = "DNS TSIG keys should be tagged"
+  description = "Check if DNS TSIG keys have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_dns_tsig_key")
 }
 
 control "dns_zone_untagged" {
-  title       = "Dns zones should be tagged"
-  description = "Check if Dns zones have at least 1 tag."
+  title       = "DNS zones should be tagged"
+  description = "Check if DNS zones have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_dns_zone")
 }
 
@@ -361,20 +361,20 @@ control "events_rule_untagged" {
 }
 
 control "file_storage_file_system_untagged" {
-  title       = "File storage file systems should be tagged"
-  description = "Check if File storage file systems have at least 1 tag."
+  title       = "File Storage file systems should be tagged"
+  description = "Check if File Storage file systems have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_file_storage_file_system")
 }
 
 control "file_storage_mount_target_untagged" {
-  title       = "File storage mount targets should be tagged"
-  description = "Check if File storage mount targets have at least 1 tag."
+  title       = "File Storage mount targets should be tagged"
+  description = "Check if File Storage mount targets have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_file_storage_mount_target")
 }
 
 control "file_storage_snapshot_untagged" {
-  title       = "File storage snapshots should be tagged"
-  description = "Check if File storage snapshots have at least 1 tag."
+  title       = "File Storage snapshots should be tagged"
+  description = "Check if File Storage snapshots have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_file_storage_snapshot")
 }
 
@@ -457,38 +457,38 @@ control "logging_log_group_untagged" {
 }
 
 control "mysql_backup_untagged" {
-  title       = "Mysql backups should be tagged"
-  description = "Check if Mysql backups have at least 1 tag."
+  title       = "MySQL backups should be tagged"
+  description = "Check if MySQL backups have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_mysql_backup")
 }
 
 control "mysql_channel_untagged" {
-  title       = "Mysql channels should be tagged"
-  description = "Check if Mysql channels have at least 1 tag."
+  title       = "MySQL channels should be tagged"
+  description = "Check if MySQL channels have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_mysql_channel")
 }
 
 control "mysql_configuration_untagged" {
-  title       = "Mysql configurations should be tagged"
-  description = "Check if Mysql configurations have at least 1 tag."
+  title       = "MySQL configurations should be tagged"
+  description = "Check if MySQL configurations have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_mysql_configuration")
 }
 
 control "mysql_configuration_custom_untagged" {
-  title       = "Mysql configuration customs should be tagged"
-  description = "Check if Mysql configuration customs have at least 1 tag."
+  title       = "MySQL configuration customs should be tagged"
+  description = "Check if MySQL configuration customs have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_mysql_configuration_custom")
 }
 
 control "mysql_db_system_untagged" {
-  title       = "Mysql db systems should be tagged"
-  description = "Check if Mysql db systems have at least 1 tag."
+  title       = "MySQL DB systems should be tagged"
+  description = "Check if MySQL DB systems have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_mysql_db_system")
 }
 
 control "nosql_table_untagged" {
-  title       = "Nosql tables should be tagged"
-  description = "Check if Nosql tables have at least 1 tag."
+  title       = "NoSQL tables should be tagged"
+  description = "Check if NoSQL tables have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_nosql_table")
 }
 
@@ -499,7 +499,7 @@ control "objectstorage_bucket_untagged" {
 }
 
 control "ons_subscription_untagged" {
-  title       = "Ons subscriptions should be tagged"
-  description = "Check if Ons subscriptions have at least 1 tag."
+  title       = "ONS subscriptions should be tagged"
+  description = "Check if ONS subscriptions have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_ons_subscription")
 }

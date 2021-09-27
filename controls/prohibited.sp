@@ -143,8 +143,8 @@ benchmark "prohibited" {
 }
 
 control "analytics_instance_prohibited" {
-  title       = "Analytics instances should not have prohibited tags"
-  description = "Check if Analytics instances have any prohibited tags."
+  title       = "Analytics Cloud instances should not have prohibited tags"
+  description = "Check if Analytics Cloud instances have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_analytics_instance")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -152,8 +152,8 @@ control "analytics_instance_prohibited" {
 }
 
 control "apigateway_api_prohibited" {
-  title       = "Apigateway apis should not have prohibited tags"
-  description = "Check if Apigateway apis have any prohibited tags."
+  title       = "API Gateway APIs should not have prohibited tags"
+  description = "Check if API Gateway APIs have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_apigateway_api")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -170,8 +170,8 @@ control "autoscaling_auto_scaling_configuration_prohibited" {
 }
 
 control "budget_alert_rule_prohibited" {
-  title       = "Budget alert rules should not have prohibited tags"
-  description = "Check if Budget alert rules have any prohibited tags."
+  title       = "Budgets alert rules should not have prohibited tags"
+  description = "Check if Budgets alert rules have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_budget_alert_rule")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -179,8 +179,8 @@ control "budget_alert_rule_prohibited" {
 }
 
 control "budget_budget_prohibited" {
-  title       = "Budget budgets should not have prohibited tags"
-  description = "Check if Budget budgets have any prohibited tags."
+  title       = "Budgets should not have prohibited tags"
+  description = "Check if Budgets have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_budget_budget")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -188,8 +188,8 @@ control "budget_budget_prohibited" {
 }
 
 control "cloud_guard_detector_recipe_prohibited" {
-  title       = "Cloud guard detector recipes should not have prohibited tags"
-  description = "Check if Cloud guard detector recipes have any prohibited tags."
+  title       = "Cloud Guard detector recipes should not have prohibited tags"
+  description = "Check if Cloud Guard detector recipes have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_cloud_guard_detector_recipe")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -197,8 +197,8 @@ control "cloud_guard_detector_recipe_prohibited" {
 }
 
 control "cloud_guard_managed_list_prohibited" {
-  title       = "Cloud guard managed lists should not have prohibited tags"
-  description = "Check if Cloud guard managed lists have any prohibited tags."
+  title       = "Cloud Guard managed lists should not have prohibited tags"
+  description = "Check if Cloud Guard managed lists have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_cloud_guard_managed_list")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -206,8 +206,8 @@ control "cloud_guard_managed_list_prohibited" {
 }
 
 control "cloud_guard_responder_recipe_prohibited" {
-  title       = "Cloud guard responder recipes should not have prohibited tags"
-  description = "Check if Cloud guard responder recipes have any prohibited tags."
+  title       = "Cloud Guard responder recipes should not have prohibited tags"
+  description = "Check if Cloud Guard responder recipes have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_cloud_guard_responder_recipe")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -215,8 +215,8 @@ control "cloud_guard_responder_recipe_prohibited" {
 }
 
 control "cloud_guard_target_prohibited" {
-  title       = "Cloud guard targets should not have prohibited tags"
-  description = "Check if Cloud guard targets have any prohibited tags."
+  title       = "Cloud Guard targets should not have prohibited tags"
+  description = "Check if Cloud Guard targets have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_cloud_guard_target")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -260,8 +260,8 @@ control "core_boot_volume_replica_prohibited" {
 }
 
 control "core_dhcp_options_prohibited" {
-  title       = "Core dhcp options should not have prohibited tags"
-  description = "Check if Core dhcp options have any prohibited tags."
+  title       = "Core DHCP options should not have prohibited tags"
+  description = "Check if Core DHCP options have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_core_dhcp_options")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -269,8 +269,8 @@ control "core_dhcp_options_prohibited" {
 }
 
 control "core_drg_prohibited" {
-  title       = "Core drgs should not have prohibited tags"
-  description = "Check if Core drgs have any prohibited tags."
+  title       = "Core DRGs should not have prohibited tags"
+  description = "Check if Core DRGs have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_core_drg")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -359,8 +359,8 @@ control "core_network_security_group_prohibited" {
 }
 
 control "core_public_ip_prohibited" {
-  title       = "Core public ips should not have prohibited tags"
-  description = "Check if Core public ips have any prohibited tags."
+  title       = "Core public IPs should not have prohibited tags"
+  description = "Check if Core public IPs have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_core_public_ip")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -368,8 +368,8 @@ control "core_public_ip_prohibited" {
 }
 
 control "core_public_ip_pool_prohibited" {
-  title       = "Core public ip pools should not have prohibited tags"
-  description = "Check if Core public ip pools have any prohibited tags."
+  title       = "Core public IP pools should not have prohibited tags"
+  description = "Check if Core public IP pools have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_core_public_ip_pool")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -413,8 +413,8 @@ control "core_subnet_prohibited" {
 }
 
 control "core_vcn_prohibited" {
-  title       = "Core vcns should not have prohibited tags"
-  description = "Check if Core vcns have any prohibited tags."
+  title       = "Core VCNs should not have prohibited tags"
+  description = "Check if Core VCNs have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_core_vcn")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -458,8 +458,8 @@ control "database_autonomous_database_prohibited" {
 }
 
 control "database_db_prohibited" {
-  title       = "Database dbs should not have prohibited tags"
-  description = "Check if Database dbs have any prohibited tags."
+  title       = "Database DBs should not have prohibited tags"
+  description = "Check if Database DBs have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_database_db")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -467,8 +467,8 @@ control "database_db_prohibited" {
 }
 
 control "database_db_home_prohibited" {
-  title       = "Database db homes should not have prohibited tags"
-  description = "Check if Database db homes have any prohibited tags."
+  title       = "Database DB homes should not have prohibited tags"
+  description = "Check if Database DB homes have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_database_db_home")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -476,8 +476,8 @@ control "database_db_home_prohibited" {
 }
 
 control "database_db_system_prohibited" {
-  title       = "Database db systems should not have prohibited tags"
-  description = "Check if Database db systems have any prohibited tags."
+  title       = "Database DB systems should not have prohibited tags"
+  description = "Check if Database DB systems have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_database_db_system")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -494,8 +494,8 @@ control "database_software_image_prohibited" {
 }
 
 control "dns_tsig_key_prohibited" {
-  title       = "Dns tsig keys should not have prohibited tags"
-  description = "Check if Dns tsig keys have any prohibited tags."
+  title       = "DNS TSIG keys should not have prohibited tags"
+  description = "Check if DNS TSIG keys have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_dns_tsig_key")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -503,8 +503,8 @@ control "dns_tsig_key_prohibited" {
 }
 
 control "dns_zone_prohibited" {
-  title       = "Dns zones should not have prohibited tags"
-  description = "Check if Dns zones have any prohibited tags."
+  title       = "DNS zones should not have prohibited tags"
+  description = "Check if DNS zones have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_dns_zone")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -521,8 +521,8 @@ control "events_rule_prohibited" {
 }
 
 control "file_storage_file_system_prohibited" {
-  title       = "File storage file systems should not have prohibited tags"
-  description = "Check if File storage file systems have any prohibited tags."
+  title       = "File Storage file systems should not have prohibited tags"
+  description = "Check if File Storage file systems have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_file_storage_file_system")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -530,8 +530,8 @@ control "file_storage_file_system_prohibited" {
 }
 
 control "file_storage_mount_target_prohibited" {
-  title       = "File storage mount targets should not have prohibited tags"
-  description = "Check if File storage mount targets have any prohibited tags."
+  title       = "File Storage mount targets should not have prohibited tags"
+  description = "Check if File Storage mount targets have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_file_storage_mount_target")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -539,8 +539,8 @@ control "file_storage_mount_target_prohibited" {
 }
 
 control "file_storage_snapshot_prohibited" {
-  title       = "File storage snapshots should not have prohibited tags"
-  description = "Check if File storage snapshots have any prohibited tags."
+  title       = "File Storage snapshots should not have prohibited tags"
+  description = "Check if File Storage snapshots have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_file_storage_snapshot")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -665,8 +665,8 @@ control "logging_log_group_prohibited" {
 }
 
 control "mysql_backup_prohibited" {
-  title       = "Mysql backups should not have prohibited tags"
-  description = "Check if Mysql backups have any prohibited tags."
+  title       = "MySQL backups should not have prohibited tags"
+  description = "Check if MySQL backups have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_mysql_backup")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -674,8 +674,8 @@ control "mysql_backup_prohibited" {
 }
 
 control "mysql_channel_prohibited" {
-  title       = "Mysql channels should not have prohibited tags"
-  description = "Check if Mysql channels have any prohibited tags."
+  title       = "MySQL channels should not have prohibited tags"
+  description = "Check if MySQL channels have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_mysql_channel")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -683,8 +683,8 @@ control "mysql_channel_prohibited" {
 }
 
 control "mysql_configuration_prohibited" {
-  title       = "Mysql configurations should not have prohibited tags"
-  description = "Check if Mysql configurations have any prohibited tags."
+  title       = "MySQL configurations should not have prohibited tags"
+  description = "Check if MySQL configurations have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_mysql_configuration")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -692,8 +692,8 @@ control "mysql_configuration_prohibited" {
 }
 
 control "mysql_configuration_custom_prohibited" {
-  title       = "Mysql configuration customs should not have prohibited tags"
-  description = "Check if Mysql configuration customs have any prohibited tags."
+  title       = "MySQL configuration customs should not have prohibited tags"
+  description = "Check if MySQL configuration customs have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_mysql_configuration_custom")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -701,8 +701,8 @@ control "mysql_configuration_custom_prohibited" {
 }
 
 control "mysql_db_system_prohibited" {
-  title       = "Mysql db systems should not have prohibited tags"
-  description = "Check if Mysql db systems have any prohibited tags."
+  title       = "MySQL DB systems should not have prohibited tags"
+  description = "Check if MySQL DB systems have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_mysql_db_system")
   param "prohibited_tags" {
     default = var.prohibited_tags
@@ -710,8 +710,8 @@ control "mysql_db_system_prohibited" {
 }
 
 control "nosql_table_prohibited" {
-  title       = "Nosql tables should not have prohibited tags"
-  description = "Check if Nosql tables have any prohibited tags."
+  title       = "NoSQL tables should not have prohibited tags"
+  description = "Check if NoSQL tables have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_nosql_table")
   param "prohibited_tags" {
     default = var.prohibited_tags
