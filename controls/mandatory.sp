@@ -125,8 +125,7 @@ benchmark "mandatory" {
     control.mysql_configuration_custom_mandatory,
     control.mysql_db_system_mandatory,
     control.nosql_table_mandatory,
-    control.objectstorage_bucket_mandatory,
-    control.ons_subscription_mandatory
+    control.objectstorage_bucket_mandatory
   ]
 }
 
@@ -711,15 +710,6 @@ control "objectstorage_bucket_mandatory" {
   title       = "Objectstorage buckets should have mandatory tags"
   description = "Check if Objectstorage buckets have mandatory tags."
   sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_objectstorage_bucket")
-  param "mandatory_tags" {
-    default = var.mandatory_tags
-  }
-}
-
-control "ons_subscription_mandatory" {
-  title       = "ONS subscriptions should have mandatory tags"
-  description = "Check if ONS subscriptions have mandatory tags."
-  sql         = replace(local.compartment_resource_mandatory_sql, "__TABLE_NAME__", "oci_ons_subscription")
   param "mandatory_tags" {
     default = var.mandatory_tags
   }

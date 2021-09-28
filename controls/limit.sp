@@ -117,8 +117,7 @@ benchmark "limit" {
     control.mysql_configuration_custom_tag_limit,
     control.mysql_db_system_tag_limit,
     control.nosql_table_tag_limit,
-    control.objectstorage_bucket_tag_limit,
-    control.ons_subscription_tag_limit
+    control.objectstorage_bucket_tag_limit
   ]
 }
 
@@ -703,15 +702,6 @@ control "objectstorage_bucket_tag_limit" {
   title       = "Objectstorage buckets should not exceed tag limit"
   description = "Check if the number of tags on Objectstorage buckets do not exceed the limit."
   sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_objectstorage_bucket")
-  param "tag_limit" {
-    default = var.tag_limit
-  }
-}
-
-control "ons_subscription_tag_limit" {
-  title       = "ONS subscriptions should not exceed tag limit"
-  description = "Check if the number of tags on ONS subscriptions do not exceed the limit."
-  sql         = replace(local.compartment_resource_limit_sql, "__TABLE_NAME__", "oci_ons_subscription")
   param "tag_limit" {
     default = var.tag_limit
   }

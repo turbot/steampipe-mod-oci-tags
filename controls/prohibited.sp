@@ -135,8 +135,7 @@ benchmark "prohibited" {
     control.mysql_configuration_custom_prohibited,
     control.mysql_db_system_prohibited,
     control.nosql_table_prohibited,
-    control.objectstorage_bucket_prohibited,
-    control.ons_subscription_prohibited
+    control.objectstorage_bucket_prohibited
   ]
 }
 
@@ -720,15 +719,6 @@ control "objectstorage_bucket_prohibited" {
   title       = "Objectstorage buckets should not have prohibited tags"
   description = "Check if Objectstorage buckets have any prohibited tags."
   sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_objectstorage_bucket")
-  param "prohibited_tags" {
-    default = var.prohibited_tags
-  }
-}
-
-control "ons_subscription_prohibited" {
-  title       = "Ons subscriptions should not have prohibited tags"
-  description = "Check if Ons subscriptions have any prohibited tags."
-  sql         = replace(local.compartment_resource_prohibited_sql, "__TABLE_NAME__", "oci_ons_subscription")
   param "prohibited_tags" {
     default = var.prohibited_tags
   }

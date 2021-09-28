@@ -100,8 +100,7 @@ benchmark "untagged" {
     control.mysql_configuration_custom_untagged,
     control.mysql_db_system_untagged,
     control.nosql_table_untagged,
-    control.objectstorage_bucket_untagged,
-    control.ons_subscription_untagged
+    control.objectstorage_bucket_untagged
   ]
 }
 
@@ -493,10 +492,4 @@ control "objectstorage_bucket_untagged" {
   title       = "Objectstorage buckets should be tagged"
   description = "Check if Objectstorage buckets have at least 1 tag."
   sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_objectstorage_bucket")
-}
-
-control "ons_subscription_untagged" {
-  title       = "ONS subscriptions should be tagged"
-  description = "Check if ONS subscriptions have at least 1 tag."
-  sql         = replace(local.compartment_resource_untagged_sql, "__TABLE_NAME__", "oci_ons_subscription")
 }
